@@ -27,7 +27,7 @@ function setup() {
   bridgelink=new link(bridge,b2);
 
   for(var i=0;i<9;i++) {
-    var s=new stone(random(200,width-200),100,25);
+    var s=new stone(random(250,width-250),100,25);
     stones.push(s);
   }
 }

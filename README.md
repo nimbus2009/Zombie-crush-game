@@ -1,7 +1,9 @@
 # Zombie-crush-game
 ***
 
-(Click me to play the game now!)[https://nimbus2009.github.io/Zombie-crush-game/]
+[Click me to play the game now!](https://nimbus2009.github.io/Zombie-crush-game/)
+
+***
 
 # Overview
 

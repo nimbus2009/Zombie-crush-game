@@ -1,2 +1,1 @@
-# Zombie crush
- 
+# zombie-crush-game

@@ -35,6 +35,7 @@ function setup() {
 
   b1=new base(70,height-330,200,50);
   b2=new base(width-70,height-330,200,50);
+  b3=new base(width/2,height,width*2,20);
 
   bridge=new Bridge(25,{x:b1.x+75,y:b1.y+25});
 
@@ -53,6 +54,7 @@ function setup() {
   cutbtn=createImg("assets/axe.png");
   cutbtn.position(width/2-50,100);
   cutbtn.size(105,100);
+  cutbtn.mouseClicked(detach);
 }
 
 function draw() {
@@ -86,4 +88,11 @@ function draw() {
     if(zombie.position.x<=200) {
       direction="right";
     }
+}
+
+function detach() {
+  
+  bridgelink.dettach();
+  bridge.break();
+
 }

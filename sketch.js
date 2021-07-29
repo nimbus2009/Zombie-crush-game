@@ -15,8 +15,12 @@ var stones=[];
 
 var bg;
 
+var zombie,z1,z2;
+
 function preload() {
   bg=loadImage("assets/background.png");
+  z1=loadAnimation("assets/zombie1.png","assets/zombie2.png");
+  z2=loadAnimation("assets/zombie3.png","assets/zombie4.png");
 }
 
 function setup() {
@@ -36,6 +40,10 @@ function setup() {
     var s=new stone(random(250,width-250),100,25);
     stones.push(s);
   }
+
+  zombie=createSprite(width/2,height-75,20,20);
+  zombie.addAnimation("z1",z1);
+  zombie.scale=0.07;
 }
 
 function draw() {
@@ -51,4 +59,6 @@ function draw() {
     for(var i=0;i<stones.length;i++) {
       stones[i].display();
     }
+
+    drawSprites();
 }

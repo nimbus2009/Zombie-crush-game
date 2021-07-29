@@ -44,8 +44,9 @@ function setup() {
   }
 
   zombie=createSprite(width/2,height-75,20,20);
-  zombie.addAnimation("z1",z1);
   zombie.scale=0.07;
+  zombie.addAnimation('z2',z2);
+  zombie.addAnimation('z1',z1);
 }
 
 function draw() {
@@ -66,9 +67,11 @@ function draw() {
 
     if(direction=="right") {
       zombie.velocityX=random(1,2);
+      zombie.changeAnimation('z1');
     }
     if(direction=="left") {
       zombie.velocityX=random(-2,-1);
+      zombie.changeAnimation('z2');
     }
 
     if(zombie.position.x>=width-200) {

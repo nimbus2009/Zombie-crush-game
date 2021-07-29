@@ -13,16 +13,22 @@ var bridgelink;
 
 var stones=[];
 
+var bg;
+
+function preload() {
+  bg=loadImage("assets/background.png");
+}
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
   engine = Engine.create();
   world = engine.world;
   frameRate(80);
 
-  b1=new base(100,height-300,200,50);
-  b2=new base(width-100,height-300,200,50);
+  b1=new base(70,height-330,200,50);
+  b2=new base(width-70,height-330,200,50);
 
-  bridge=new Bridge(22,{x:b1.x+75,y:b1.y+25});
+  bridge=new Bridge(25,{x:b1.x+75,y:b1.y+25});
 
   bridgelink=new link(bridge,b2);
 
@@ -37,6 +43,8 @@ function draw() {
   Engine.update(engine);
   b1.display();
   b2.display();
+
+  image(bg,0,0,width,height);
 
   bridge.show();
 

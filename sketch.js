@@ -19,6 +19,8 @@ var zombie,z1,z2;
 
 var direction="right";
 
+var cutbtn;
+
 function preload() {
   bg=loadImage("assets/background.png");
   z1=loadAnimation("assets/zombie1.png","assets/zombie2.png");
@@ -47,6 +49,10 @@ function setup() {
   zombie.scale=0.07;
   zombie.addAnimation('z2',z2);
   zombie.addAnimation('z1',z1);
+
+  cutbtn=createImg("assets/axe.png");
+  cutbtn.position(width/2-50,100);
+  cutbtn.size(105,100);
 }
 
 function draw() {

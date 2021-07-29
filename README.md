@@ -28,13 +28,35 @@ Added basic layout-
 
 ***
 
+### Stage-2
+
+Added zombie-
+- And the animation
+- And the movement
+- Ran/simulated physics for these
+
+Added animations-
+- For bridge
+- For stones
+- For zombie
+
+***
+
 # Progress track
 
 | Stage       | Date        |
 | ----------- | ----------- |
 | Stage-1     | 28-07-2009  |
+| Stage-2     | 29-07-2009  |
 
 ### Stage-1
+
+- [x] Completed
+- [x] Commited to GitHub
+- [x] Built GitHub pages site
+- [x] Tested
+
+### Stage-2
 
 - [x] Completed
 - [x] Commited to GitHub

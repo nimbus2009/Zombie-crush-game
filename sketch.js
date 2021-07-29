@@ -65,10 +65,10 @@ function draw() {
     drawSprites();
 
     if(direction=="right") {
-      zombie.velocityX=random(1,4);
+      zombie.velocityX=random(1,2);
     }
     if(direction=="left") {
-      zombie.velocityX=random(-4,-1);
+      zombie.velocityX=random(-2,-1);
     }
 
     if(zombie.position.x>=width-200) {

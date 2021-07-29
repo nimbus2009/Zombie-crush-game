@@ -17,6 +17,8 @@ var bg;
 
 var zombie,z1,z2;
 
+var direction="right";
+
 function preload() {
   bg=loadImage("assets/background.png");
   z1=loadAnimation("assets/zombie1.png","assets/zombie2.png");
@@ -61,4 +63,18 @@ function draw() {
     }
 
     drawSprites();
+
+    if(direction=="right") {
+      zombie.velocityX=random(1,4);
+    }
+    if(direction=="left") {
+      zombie.velocityX=random(-4,-1);
+    }
+
+    if(zombie.position.x>=width-200) {
+      direction="left";
+    }
+    if(zombie.position.x<=200) {
+      direction="right";
+    }
 }

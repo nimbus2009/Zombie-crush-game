@@ -96,3 +96,18 @@ function detach() {
   bridge.break();
 
 }
+
+function collided(body1,body2,threshold) {
+  if(body1!==null&&body2!==null) {
+    var distance=dist(body1.position.x,body1.position.y,body2.position.x,body2.position.y);
+    if(distance<=threshold) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+  else {
+    console.error("The DCF (Distance Collision Function) has gotten into a problem:\n One of the bodies is 'null'");
+  }
+}

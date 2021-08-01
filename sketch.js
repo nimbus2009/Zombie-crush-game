@@ -108,6 +108,6 @@ function collided(body1,body2,threshold) {
     }
   }
   else {
-    console.error("The DCF (Distance Collision Function) has gotten into a problem:\n One of the bodies is 'null'");
+    console.error("≡(▔﹏▔)≡\nThe DCF (Distance Collision Function) has gotten into a problem:\nOne of the bodies is 'null'");
   }
 }

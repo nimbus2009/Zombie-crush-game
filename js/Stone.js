@@ -17,5 +17,7 @@ class stone {
         fill("#2f4f4f");
 
         image(this.animation,pos.x-25,pos.y-25,50,50);
+
+        
     }
 }

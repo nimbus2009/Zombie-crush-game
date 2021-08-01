@@ -91,7 +91,9 @@ function draw() {
 
     for(var i=0;i<stones.length;i++) {
       if(collided(stones[i].body,zombie,50)) {
-        console.log("Collided!")
+        console.log("Collided!");
+        stones[i]=null;
+        stones.splice(i,1);
       }
     }
 }

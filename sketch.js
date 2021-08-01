@@ -15,7 +15,7 @@ var stones=[];
 
 var bg;
 
-var zombie,z1,z2;
+var zombie,z1,z2,z3;
 
 var direction="right";
 
@@ -25,6 +25,7 @@ function preload() {
   bg=loadImage("assets/background.png");
   z1=loadAnimation("assets/zombie1.png","assets/zombie2.png");
   z2=loadAnimation("assets/zombie3.png","assets/zombie4.png");
+  z3=loadImage("assets/zombie.png");
 }
 
 function setup() {
@@ -50,6 +51,7 @@ function setup() {
   zombie.scale=0.07;
   zombie.addAnimation('z2',z2);
   zombie.addAnimation('z1',z1);
+  zombie.addAnimation('zs',z3);
 
   cutbtn=createImg("assets/axe.png");
   cutbtn.position(width/2-50,100);
@@ -118,4 +120,9 @@ function collided(body1,body2,threshold) {
   else {
     console.error("≡(▔﹏▔)≡\nThe DCF (Distance Collision Function) has gotten into a problem:\nOne of the bodies is 'null'");
   }
+}
+
+function defeat() {
+  zombie.velocityX=0;
+  zombie.addAnimation("zombie")
 }

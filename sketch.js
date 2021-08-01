@@ -88,6 +88,12 @@ function draw() {
     if(zombie.position.x<=200) {
       direction="right";
     }
+
+    for(var i=0;i<stones.length;i++) {
+      if(collided(stones[i].body,zombie,50)) {
+        console.log("Collided!")
+      }
+    }
 }
 
 function detach() {

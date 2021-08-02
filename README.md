@@ -42,12 +42,19 @@ Added animations-
 
 ***
 
+### Stage-3
+
+Added collision detection for-
+- Zombie
+- Stones
+
 # Progress track
 
 | Stage       | Date        |
 | ----------- | ----------- |
-| Stage-1     | 28-07-2009  |
-| Stage-2     | 29-07-2009  |
+| Stage-1     | 28-07-2021  |
+| Stage-2     | 29-07-2021  |
+| Stage-3     | 02-08-2021  |
 
 ### Stage-1
 
@@ -62,3 +69,10 @@ Added animations-
 - [x] Commited to GitHub
 - [x] Built GitHub pages site
 - [x] Tested
+
+### Stage-3
+
+- [x] Completed
+- [x] Commited to GitHub
+- [x] Built GitHub pages site
+- [ ] Tested

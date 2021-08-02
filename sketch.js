@@ -21,6 +21,8 @@ var direction="right";
 
 var cutbtn;
 
+let defeated=false;
+
 function preload() {
   bg=loadImage("assets/background.png");
   z1=loadAnimation("assets/zombie1.png","assets/zombie2.png");
@@ -96,7 +98,12 @@ function draw() {
         console.log("Collided!");
         stones[i]=null;
         stones.splice(i,1);
+        defeated=true;
       }
+    }
+
+    if(defeated) {
+      defeat();
     }
 }
 
@@ -124,5 +131,6 @@ function collided(body1,body2,threshold) {
 
 function defeat() {
   zombie.velocityX=0;
-  zombie.addAnimation("zombie")
+  zombie.changeAnimation("zs");
+  zombie.scale=0.2
 }
